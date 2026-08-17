@@ -1,37 +1,47 @@
-## Axiom Trade · Token Discovery Table
+# Axiom Token Discovery Dashboard
 
-Pixel-focused recreation of Axiom Pulse’s token discovery table with realtime mock price feeds, tooltips/popovers/modals, sorting, skeleton/progressive loading, and error boundaries. Built with Next.js 14 (App Router), TypeScript (strict), Tailwind CSS, Redux Toolkit, React Query, and Radix UI.
+A responsive token-discovery interface with live mock market updates, sortable tables, progressive loading, and detailed token views.
 
-## Stack
-- Next.js 14 App Router, TypeScript, Tailwind CSS (v4)
-- State: Redux Toolkit (UI), React Query (data)
-- UI primitives: Radix Tooltip/Popover/Dialog/Tabs, lucide-react icons
-- Mock data + WebSocket-style price deltas
+[View the live application](https://axiom-trade-token.vercel.app)
 
-## Features
-- Three categories: New pairs, Final Stretch, Migrated
-- Sorting, hover tooltips, row click modal, popover actions
-- Live price/metric updates with smooth flash transitions
-- Skeleton + shimmer, progressive row reveal, error retry state
-- Responsive with horizontal scroll support down to 320px
+## Highlights
 
-## Local Development
+- New pairs, final-stretch, and migrated-token views
+- Sorting, contextual tooltips, popovers, and token detail modals
+- Mock WebSocket-style price and metric updates
+- Loading, retry, and error-boundary states
+- Responsive layouts down to 320px
+
+## Technology
+
+- Next.js 16 App Router, React 19, and strict TypeScript
+- Tailwind CSS 4
+- Redux Toolkit for interface state
+- TanStack Query for data state
+- Radix UI primitives and Lucide icons
+
+## Run locally
+
 ```bash
-npm install
+npm ci
 npm run dev
-# open http://localhost:3000
 ```
 
-## Quality
-- Lint: `npm run lint`
-- Build: `npm run build`
+Open <http://localhost:3000>.
 
-## Deployment (Vercel)
-- Connect the repo on Vercel, set framework to Next.js. Defaults are sufficient.
-- Ensure `NODE_ENV=production` build: Vercel will run `npm install && npm run build`.
+## Verify
 
-## Deliverables checklist
-- Code in GitHub with clean commits
-- Vercel deployment (add URL here once deployed)
-- 1–2 min public YouTube demo (add link here once recorded)
-- Responsive snapshots (320px upward) to be attached/linked here after capture
+```bash
+npm run lint
+npm run build
+```
+
+The application uses generated demonstration data and does not execute financial transactions. It is not financial advice.
+
+## Security
+
+Please report vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
+
+## License
+
+[MIT](LICENSE)
